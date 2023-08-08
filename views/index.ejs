@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+  <div class="list-top">
+    <h1><%= getCurrentDate() %></h1>
+  </div>
+  <div class="list-body">
+    <label id="first-label" class="checkbox-label">
+      <input class="check-square" type="checkbox" />
+      <p class="text-check-box">Write anything you need to do !</p>
+    </label>
+    
+
+    <% items.forEach(item => { %>
+    <label class="checkbox-label">
+      <input class="check-square" type="checkbox" />
+      <p class="text-check-box"><%= item %></p>
+    </label>
+    <% }); %>
+
+    <!-- Form to add new box  -->
+    <form class="item checkbox-label-bottom" action="/submit-main" method="post">
+      <input
+        id="form"
+        type="text"
+        name="newItem"
+        placeholder="New Item"
+        autocomplete="off"
+      />
+      <button id="cross" type="submit" name="list"><i class="fa-solid fa-plus fa-2xl"></i></button>
+    </form>
+    
+  </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

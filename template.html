@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="public/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">🗓️ Today</a>
+        <a href="">🗂️ Work</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="list-top">
+        <h1>Today's Date</h1>
+      </div>
+      <div class="list-body">
+        <label class="checkbox-label">
+          <input class="check-square" type="checkbox"  />
+          <p class="text-check-box" >  Option 1 </p>
+        </label>
+        <label class="checkbox-label">
+            <input class="check-square" type="checkbox"  />
+            <p class="text-check-box" >  Option 1 </p>
+          </label>
+          
+          <!-- Form to add new box  -->
+          <form class="item checkbox-label" action="/" method="post">
+            <input id="form" type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" value="Monday," august="" 7="">+</button>
+          </form>
+      </div>
+    </main>
+
+    <footer>
+        @copyright Vatthana Boulom - date 
+    </footer>
+  </body>
+</html>
